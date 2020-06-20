@@ -25,7 +25,7 @@
 
 </head>
 
-<body>
+<body onload="getall()" >
 
     <!-- Navbar -->
     <nav class="nav-center z-depth-0">
@@ -81,12 +81,19 @@
             <div class="grey darken-4 p-3 center border-radius-20">
                 <p>To Do List</p>
                 <ol class="toDoList" id="toDoList">
-                    <li><span id="item">Hi</span>&nbsp;&nbsp;&nbsp;&nbsp;<button class="waves-effect btn red" type="submit" id="deleteItem">Remove</button></li>
                 </ol>
-                <div class="input-field">
-                    <input class="input" id="input" placeholder="Complete CC Project" />
-                </div>
-                <button class="waves-effect btn green" type="submit" id="addItem">Add</button>
+        
+                    <div class="input-field">
+                        <input class="input" type="text" id="name" placeholder="name of item" />
+                    </div>
+                    <div class="input-field">
+                        <input class="input" type="text" id="desc" placeholder="item description" />
+                    </div>
+                    <div class="input-field">
+                        <input class="input" type="number" id="qty" placeholder="quantity" />
+                    </div>
+                    <button class="waves-effect btn green" type="submit" id="addItem" onclick="newItem()">Add</button>
+
             </div>
         </div>
 
@@ -94,7 +101,7 @@
             <div class="grey darken-4 p-3 center border-radius-20">
                 <p>All Items</p>
                 <ol class="allItems" id="allItems">
-                    <li>Items</li>
+                    <!-- <li><span id="item">Hi</span>&nbsp;&nbsp;&nbsp;&nbsp;<button class="waves-effect btn red" type="submit" id="deleteItem">Remove</button></li> -->
                 </ol>
             </div>
         </div>

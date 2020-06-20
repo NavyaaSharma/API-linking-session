@@ -83,6 +83,13 @@
                 <div class="row center mt-n3">
                     <div class="input-field center w-md-30 mx-auto">
                         <i class="material-icons prefix black-text">email</i>
+                        <input id="name" type="text" class="validate" class="black-text">
+                        <label for="email" class="black-text">Name</label>
+                    </div>
+                </div>
+                <div class="row center mt-n3">
+                    <div class="input-field center w-md-30 mx-auto">
+                        <i class="material-icons prefix black-text">email</i>
                         <input id="email" type="email" class="validate" class="black-text">
                         <label for="email" class="black-text">Email</label>
                     </div>
@@ -95,8 +102,7 @@
                     </div>
                 </div>
                 <div class="row center">
-                    <button class="btn waves-effect waves-light btn-CC-black z-depth-0" type="button" onclick="Login()"
-                        id="signup">Register</button>
+                    <button class="btn waves-effect waves-light btn-CC-black z-depth-0" type="button" id="signup" onclick="register()">Register</button>
                 </div>
                 <div class="row center">
                     <p class="heading"> - or - </p>
@@ -161,7 +167,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
         crossorigin="anonymous"></script>
     <script src="assets/js/index.js"></script>
-    <script src="assets/js/globals.js"></script>
+
 
 </body>
 
