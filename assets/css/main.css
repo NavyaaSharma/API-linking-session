@@ -1,0 +1,32 @@
+.strike {
+    text-decoration: line-through;
+}
+
+.card-panel {
+    margin: 5rem;
+}
+
+li,
+p,
+input {
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+li {
+    cursor: pointer;
+    margin: .5rem;
+}
+
+li:hover {
+    background-color: #292929;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+}
+
+input {
+    text-align: center;
+    font-size: 1.5rem !important;
+}
