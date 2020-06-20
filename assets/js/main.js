@@ -2,13 +2,13 @@ $(document).ready(function () {
 
     var $button = $('#addItem');
     var $input = $('#input');
-    var $ol = $('ol');
+    var $ol = $('#toDoList');
     var $li = $('li');
 
     $button.on('click',
         function () {
             var newToDo = $input.val();
-            $ol.append('<li>' + newToDo + '</li>');
+            $ol.append('<li class="toDoDel">' + newToDo + '</li>');
             $input.val('');
         });
 
@@ -19,7 +19,7 @@ $(document).ready(function () {
         }
     });
 
-    $(document).on('dblclick', 'li', function () {
+    $(document).on('dblclick', '.toDoDel', function () {
         $(this).toggleClass('strike').fadeOut('slow');
     });
 
